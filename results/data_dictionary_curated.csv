@@ -1,0 +1,30 @@
+Feature,Description
+SalePrice,Target variable -- the property's final sale price in USD.
+OverallQual,"Overall material and finish quality, rated 1 (very poor) to 10 (very excellent)."
+OverallCond,"Overall condition of the property, rated 1 (very poor) to 10 (very excellent)."
+GrLivArea,Above-ground living area in square feet.
+TotalBsmtSF,Total basement area in square feet (0 if no basement).
+1stFlrSF,First-floor area in square feet.
+2ndFlrSF,Second-floor area in square feet (0 if single-storey).
+YearBuilt,Original construction year.
+YearRemodAdd,Remodel date; equals YearBuilt if no remodel/addition took place.
+GarageCars,"Garage capacity, in number of cars."
+GarageArea,Garage size in square feet.
+FullBath,Number of full bathrooms above grade.
+HalfBath,Number of half bathrooms above grade.
+BsmtFullBath,Number of full bathrooms in the basement.
+BsmtHalfBath,Number of half bathrooms in the basement.
+BedroomAbvGr,Number of bedrooms above grade (does not include basement bedrooms).
+TotRmsAbvGrd,Total rooms above grade (does not include bathrooms).
+LotArea,Lot size in square feet.
+LotFrontage,Linear feet of street connected to the property.
+Neighborhood,Physical location (neighbourhood) within Ames city limits -- treated as a high-scrutiny variable (see Notebook 4's responsible-AI note).
+ExterQual,Exterior material quality: Ex/Gd/TA/Fa/Po.
+KitchenQual,Kitchen quality: Ex/Gd/TA/Fa/Po.
+BsmtQual,"Height/quality of the basement: Ex/Gd/TA/Fa/Po, or NA = no basement."
+GarageQual,"Garage quality: Ex/Gd/TA/Fa/Po, or NA = no garage."
+PoolQC,"Pool quality: Ex/Gd/TA/Fa/Po, or NA = no pool (present in the vast majority of rows)."
+Condition1,"Proximity to various conditions (e.g. main road, railroad) -- NOT a quality rating despite containing 'Cond' in its name."
+SaleCondition,"Condition of sale (Normal, Abnormal/foreclosure, Partial/new construction, etc.) -- NOT a quality rating."
+MoSold,Month sold.
+YrSold,Year sold.
