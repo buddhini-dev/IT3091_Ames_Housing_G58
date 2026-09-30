@@ -1,0 +1,16 @@
+Feature,Missing_Pct,Likely_Meaning
+PoolQC,99.49,No pool on the property
+MiscFeature,96.06,"No additional misc feature (shed, tennis court, etc.)"
+Alley,93.66,No alley access
+Fence,80.05,No fence
+MasVnrType,58.48,No masonry veneer
+FireplaceQu,46.83,No fireplace
+GarageType,5.48,No garage
+GarageFinish,5.48,No garage
+GarageQual,5.48,No garage
+GarageCond,5.48,No garage
+BsmtQual,2.4,No basement
+BsmtCond,2.4,No basement
+BsmtExposure,2.4,No basement
+BsmtFinType1,2.4,No basement
+BsmtFinType2,2.4,No basement
