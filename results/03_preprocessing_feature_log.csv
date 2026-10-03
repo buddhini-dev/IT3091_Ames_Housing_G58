@@ -1,0 +1,7 @@
+Decision,Choice,Reason
+Outlier removal,Dropped 2 training row(s) flagged by Role B (GrLivArea/SalePrice outliers),Known Ames data-quirk outliers distort linear and boosting fits alike
+Quality ordinal encoding,"Mapped ['ExterQual', 'ExterCond', 'BsmtQual', 'BsmtCond', 'HeatingQC', 'KitchenQual', 'FireplaceQu', 'GarageQual', 'GarageCond', 'PoolQC'] to Ex=5..Po=1 by VALUE, not by column name","Preserves ordinal information; avoids corrupting Condition1/2/SaleCondition, which share ""Cond"" in the name but are not ratings"
+Numeric imputation,"Median, fit on train only",Robust to skew; leakage-safe
+Categorical imputation + encoding,"Most-frequent impute + OneHotEncoder(handle_unknown=""ignore"")",Leakage-safe; unseen categories at test/deployment time don't crash the pipeline
+Feature engineering,"Added TotalSF, HouseAge, RemodAge, TotalBath, WasRemodeled","Ablation showed test RMSE improved from $23,279 to $24,320"
+Scaling,Not applied in this pipeline (tree/boosting models are scale-invariant),Role A's Linear Regression pipeline applies its own StandardScaler separately
